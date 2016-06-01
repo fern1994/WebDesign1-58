@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Coffee Beans Shop</title>
+	<meta charset="utf-8" />
+	
+	<link rel="stylesheet" href="style4.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="basic-jquery-slider-master/bjqs.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'> 
+
+    <!-- demo.css contains additional styles used to set up this demo page - not required for the slider --> 
+    <link href="basic-jquery-slider-master/demo2.css" rel="stylesheet" type="text/css">
+    <!-- load jQuery and the plugin -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="basic-jquery-slider-master/js/bjqs-1.3.min.js"></script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="gridder-master/dist/css/jquery.gridder.min.css" rel="stylesheet">
+        <link href="gridder-master/demo/css/demo.css" rel="stylesheet">
+
+
+</head>
+
+<body class="body">
+	
+	<header class="mainHeader">
+		<img src="img/logocoffeebeans.gif">
+  		<h2>Coffee Beans Shop</h2>
+		<nav><ul>
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="products.html">Product</a></li>
+			<li><a href="promotion.html">Promotion</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul></nav>
+	</header>
+		
+	<div class="mainContent">
+		<div class="content">	
+				<article class="topcontent">	
+					<div id="container">
+  
+      <h2><font color="#000000">WELCOME</font></h2>
+
+      <!--  Outer wrapper for presentation only, this can be anything you like -->
+      <div id="banner-fade">
+
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><img src="basic-jquery-slider-master/img/img1.jpg" title="เมล็ดกาแฟพันธุ์ดี"></li>
+          <li><img src="basic-jquery-slider-master/img/img2.jpg" title="รสชาติเข้ม"></li>
+          <li><img src="basic-jquery-slider-master/img/img3.jpg" title="กลิ่นหอม"></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+
+      </div>
+
+      <script class="secret-source">
+        jQuery(document).ready(function($) {
+
+          $('#banner-fade').bjqs({
+            height      : 320,
+            width       : 620,
+            responsive  : true
+          });
+
+        });
+      </script>
+					
+				</article>
+
+				<article class="bottomcontent">	
+					<header>
+						<h2><a href="products.html" rel="bookmark" title="BestSeller">Best Seller</a></h2>
+					</header>
+                    
+                    <ul class="gridder">
+                <li class="gridder-list" data-griddercontent="#gridder-content-1">
+                    <img src="img/products/11224864_452200758297423_1513244816877561735_n.jpg" class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-2">
+                    <img src="img/products/12317019_452204954963670_830915950_n.gif" class="img-responsive" />
+                </li><!--
+                -->
+            </ul>
+
+
+            <div id="gridder-content-1" class="gridder-content">
+                <div class="row">
+                    <div>
+                      <img src="img/products/NLC_ES_Bl.jpg" class="img-responsive" />
+                    </div>
+                    <div>
+                        <h3>NLCOFFEE Espresso Blend</h3>
+                        
+                        <p>รายละเดียด : กาแฟคั่วระดับเข้ม แนะนำสำหรับร้านกาแฟที่ต้องการชงกาแฟเย็นเข้ม รสชาติแน่น</p>
+                        
+                        <p>ราคา : 335</p>
+                    </div>
+                </div>
+            </div>
+            <div id="gridder-content-2" class="gridder-content">
+                <div class="row">
+                    <div>
+                      <img src="img/products/NLC_D_Arabic.jpg" class="img-responsive" />
+                    </div>
+                    <div>
+                        <h3>NLCOFFEE Dark Arabica</h3>
+                        
+                        <p>รายละเอียด : กาแฟคั่วระดับเข้ม สีน้ำตาลเข้มมีน้ำมันรอบเล็กน้อย รสชาติหอมเข้มในสไตล์อิตาเลี่ยน เข้ากันกับนมได้ดี</p>
+                       
+                        <p>ราคา : 440</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="gridder-master/dist/js/jquery.gridder.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+
+                // Call Gridder
+                $(".gridder").gridderExpander({
+                   scroll: true,
+        scrollOffset: 30,
+        scrollTo: "panel",                  // panel or listitem
+        animationSpeed: 400,
+        animationEasing: "easeInOutExpo",
+        showNav:true ,                      // Show Navigation
+        nextText: "| next  ",                   // Next button text
+        prevText: "| prev  ",               // Previous button text
+        closeText: "close  ",                 // Close button text
+        onStart: function(){
+            //Gridder Inititialized
+        },
+        onContent: function(){
+            //Gridder Content Loaded
+        },
+        onClosed: function(){
+            //Gridder Closed
+        
+                    }
+                });
+            });
+        </script>
+
+					<footer>
+						<p class="post-info">This was posted 29/11/2015 by Coffee Beans Shop</p>
+					</footer>
+					
+					<content>
+						<p>กาแฟขายดีในเดือน พฤศจิกายน NLCOFFEE Espresso Blend และ NLCOFFEE Dark Arabica</p>
+					</content>
+				
+				</article>
+		</div>
+			
+				
+	</div>
+	
+	<footer class="mainFooter">
+		<p>By Coffee Beans shop 2015</p>
+	</footer>
+
+</body>
+</html>
